@@ -388,7 +388,7 @@
   max-width: 100%;
   margin: 0 auto;
   margin-bottom: 80px;
-  padding-bottom: 260px;
+  padding-bottom: 560px;
   overflow: visible;
 }
 
@@ -477,6 +477,24 @@
   z-index: 2;
 }
 
+#workskin .knock_flower:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 3200px;
+  max-width: none;
+  height: 980px;
+  margin-top: 10px;
+  transform: translateX(-50%);
+  background-image: url(https://raw.githubusercontent.com/jmaepraendith/AO3-playing-around-with-me/refs/heads/main/image/textrfomto.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
 #workskin .knock_wrapper:hover .knock_message {
   transform: translateY(0px);
   opacity: 1;
@@ -484,6 +502,10 @@
 
 #workskin .knock_wrapper:hover .knock_flower {
   transform: translateY(0px);
+  opacity: 1;
+}
+
+#workskin .knock_wrapper:hover .knock_flower:after {
   opacity: 1;
 }
 
@@ -531,7 +553,7 @@
     width: auto;
     max-width: 94%;
     margin-bottom: 60px;
-    padding-bottom: 280px;
+    padding-bottom: 420px;
     text-align: center;
   }
 
@@ -575,6 +597,13 @@
     transform: translateY(40px);
     background-size: contain;
     background-position: center center;
+  }
+
+  #workskin .knock_flower:after {
+    width: 980px;
+    max-width: none;
+    height: 420px;
+    margin-top: 8px;
   }
 
   #workskin .closed_knock_flowers {
