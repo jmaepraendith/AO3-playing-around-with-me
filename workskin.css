@@ -78,7 +78,7 @@
   min-width: 10%;
   max-width: 30%;
   background: transparent;
-  background-image: url(https://raw.githubusercontent.com/jmaepraendith/AO3-playing-around-with-me/refs/heads/main/stampppp.jpg);
+  background-image: url(https://raw.githubusercontent.com/jmaepraendith/AO3-playing-around-with-me/refs/heads/main/image/stampppp.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -384,11 +384,12 @@
 
 #workskin .knock_wrapper {
   position: relative;
-  width: 600px;
-  max-width: 80%;
+  width: 900px;
+  max-width: 95%;
   margin: 0 auto;
-  margin-bottom: 150px;
-  overflow: hidden;
+  margin-bottom: 80px;
+  padding-bottom: 260px;
+  overflow: visible;
 }
 
 #workskin .knock_scene {
@@ -399,7 +400,7 @@
   align-items: center;
   margin: 0 auto;
   width: 100%;
-  height: 320px;
+  height: 360px;
   overflow: visible;
   padding-bottom: 0px;
 }
@@ -409,7 +410,7 @@
   z-index: 3;
   width: 160px;
   height: 190px;
-  background-image: url(https://raw.githubusercontent.com/jmaepraendith/AO3-playing-around-with-me/refs/heads/main/bird.jpg);
+  background-image: url(https://raw.githubusercontent.com/jmaepraendith/AO3-playing-around-with-me/refs/heads/main/image/bird.jpg);
   background-size: contain;
   background-position: center;
   border-radius: 8px;
@@ -433,7 +434,7 @@
   top: auto;
   transform: translateY(-100px);
   opacity: 0;
-  background-image: url(https://raw.githubusercontent.com/jmaepraendith/AO3-playing-around-with-me/refs/heads/main/angel.jpg);
+  background-image: url(https://raw.githubusercontent.com/jmaepraendith/AO3-playing-around-with-me/refs/heads/main/image/angel.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -447,22 +448,30 @@
   font-family: Papyrus;
   font-size: 16px;
   color: #383C45;
-  white-space: nowrap;
+  white-space: normal;
+  line-height: 1.35;
+  text-align: center;
   transition: opacity 1s, transform 1s;
   z-index: 2;
   margin-top: 10px;
+  width: 100%;
+  max-width: 420px;
 }
 
 #workskin .knock_flower {
   position: relative;
-  left: 70%;
-  transform: translateX(-50%) translateY(60px);
-  width: 980px;
+  display: block;
+  width: 100%;
+  max-width: 900px;
   height: 460px;
-  background-image: url(https://raw.githubusercontent.com/jmaepraendith/AO3-playing-around-with-me/refs/heads/main/allmybq-white-rose-Photoroom.png);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateY(60px);
+  background-image: url(https://raw.githubusercontent.com/jmaepraendith/AO3-playing-around-with-me/refs/heads/main/image/allmybq-white-rose-Photoroom.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   opacity: 0;
   transition: opacity 1s, transform 1s;
   z-index: 2;
@@ -474,8 +483,64 @@
 }
 
 #workskin .knock_wrapper:hover .knock_flower {
-  transform: translateX(-50%) translateY(0px);
+  transform: translateY(0px);
   opacity: 1;
+}
+
+@media (max-width: 700px) {
+  #workskin .knock_wrapper {
+    width: auto;
+    max-width: 94%;
+    margin-bottom: 60px;
+    padding-bottom: 280px;
+    text-align: center;
+  }
+
+  #workskin .knock_scene {
+    height: auto;
+    min-height: 360px;
+  }
+
+  #workskin .knock_btn {
+    width: 38vw;
+    max-width: 150px;
+    height: 45vw;
+    max-height: 180px;
+  }
+
+  #workskin .knock_label {
+    bottom: -18px;
+    white-space: normal;
+    width: max-content;
+    max-width: 90vw;
+    text-align: center;
+  }
+
+  #workskin .knock_message {
+    width: 100%;
+    max-width: 320px;
+    min-width: 0;
+    padding: 18px 18px 18px 60px;
+    font-size: 14px;
+    transform: translateY(-40px);
+    background-position: left center;
+  }
+
+  #workskin .knock_flower {
+    width: 340px;
+    max-width: 100%;
+    height: 280px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(40px);
+    background-size: contain;
+    background-position: center center;
+  }
+
+  #workskin .closed_knock_flowers {
+    top: 250px;
+  }
 }
 
 #workskin .trifold_letter2 {
@@ -551,7 +616,7 @@
   height: 75px;
   width: 80px;
   background: transparent;
-  background-image: url(https://raw.githubusercontent.com/jmaepraendith/AO3-playing-around-with-me/refs/heads/main/stamp2.jpg);
+  background-image: url(https://raw.githubusercontent.com/jmaepraendith/AO3-playing-around-with-me/refs/heads/main/image/stamp2.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -772,7 +837,7 @@
 #workskin .closed_knock_flowers {
   position: absolute;
   left: 50%;
-  top: 180px;
+  top: 220px;
   transform: translateX(-50%) translateY(0px);
   display: flex;
   flex-direction: column;
